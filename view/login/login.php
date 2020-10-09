@@ -56,12 +56,6 @@ session_start();
         </div>
     </div>
 
-    <?php
-    if(isset($_SESSION['obg'])){
-        echo($_SESSION['obg']);
-        unset($_SESSION['obg']);
-    }
-    ?>
 </body>
 
 </html>
