@@ -1,4 +1,6 @@
 <?php
+
+    //Conexão para concluir o cadastro
     include_once("../connection/conexao.php");
     session_start();
 

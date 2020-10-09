@@ -1,7 +1,6 @@
-<?php?>
-
 <!DOCTYPE html>
 <html lang="pt">
+
 
 <head>
     <meta charset="UTF-8">
@@ -15,19 +14,21 @@
 
         <header>
 
+            <!--Título-->
             <div class="desc-text">
                 <h1>Realialize seu Cadastro para Fazer Pedidos!</h1>
             </div>
 
         </header>
 
-
+        <!--Imagem-->
         <div class="card-center">
 
             <div class="img-center-cad">
                 <img src="../../img/GDPR-rafiki.svg">
             </div>
 
+            <!--Form para cadastrar o usuário-->
             <form action="../../controller/cadastroClienteQuery.php" method="post">
 
                 <div class="titulo">
