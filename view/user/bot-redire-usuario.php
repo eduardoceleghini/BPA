@@ -1,4 +1,5 @@
 <?php
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,7 +39,7 @@
 
             <div class="right">
                 <div class="imag-right">
-                    <img src="../../img/People search.gif" alt="">
+                    <img src="../../img/People search.gif">
                 </div>
             </div>
         </div>
