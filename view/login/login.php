@@ -23,39 +23,50 @@ session_start();
 
         </header>
 
-        <div class="card">
-
-            <div class="img-center">
-                <img src="../../img/Security On-amico.svg">
-            </div>
-
             <form action="../../controller/result.php" method="post">
+                   
+                <div class="img-center">
+                    <img src="../../img/Security On-amico.svg">
+                </div>
+
                 <div class="inf">
-                    <h2>Informe seu Email e Senha para se Autenticar.</h2>
+                    <h2>Informe seu E-mail e Senha para se Autenticar.</h2>
                 </div>
 
-                <div class="login">
+                <div class="form-signin">
+				    <?php
+					    if(isset($_SESSION['msg'])){
+						    echo $_SESSION['msg'];
+						    unset($_SESSION['msg']);
+					    }
+					    if(isset($_SESSION['msgcad'])){
+						    echo $_SESSION['msgcad'];
+						    unset($_SESSION['msgcad']);
+					    }   
+                    ?>
+                </div>
+                
+            <div class="login">
 
-                    <label for="email"></label>
+                <label for="email">
                     <input type="text" placeholder="Email" name="email"  id="email" required>
-
-                    <label for="senha"></label>
+                </label>
+                    
+                <label for="senha">
                     <input type="password" placeholder="Senha" name="senha"  id="senha" required>
+                </label>
 
-                    <div class="redf">
-                        <a href="#">Redefinir Senha</a>
-                    </div>
-
-                    <div class="button">
-                        <input type="submit" name="cadastrar" id="Entrar" value="Entrar">
-
-                    </div>
-
+                <div class="redf">
+                    <a href="#">Redefinir Senha</a>
                 </div>
-            </form>
-        </div>
-    </div>
 
+                <div class="button">
+                 <input type="submit" name="cadastrar" id="Entrar" value="Entrar">
+                </div>
+            </div>
+        </form>
+        <div class="footer"></div>
+    </div>
 </body>
 
 </html>
