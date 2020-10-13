@@ -89,6 +89,32 @@ body {
     background-color: rgb(212, 244, 245);
 }
 
+.categoria, .servicos, .Estado, .Cidade {
+  margin-left: 37%;
+  padding: 0 0 10px 0px;
+}
+
+.categoria select, .servicos select, .Estado select, .Cidade select{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 350px;
+  border: 1px solid black;
+  font-size: 17px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  outline: none;
+  height: 40px;
+}
+
+.categoria select:hover, .servicos select:hover, .Estado select:hover, .Cidade select:hover {
+  background-color: rgb(212, 244, 245);
+}
+
+.categoria select option, .servicos select option, .Estado select option, .Cidade select option {
+  padding: 30px;
+  background-color: rgb(212, 244, 245);
+  font-weight: bold;
+}
+
   .button-enviar input{
     background-color: #40e0d0;
     padding: 10px 10px;
