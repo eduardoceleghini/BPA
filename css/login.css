@@ -22,27 +22,18 @@ body {
   position: absolute; 
   text-align: center;
   width: 100%; 
-  height: 60px;
+  height: 45px;
   padding: 3px;
   font-weight: lighter;
   background-color: black;
  }
  
-.card{
-  align-items: center;
-  position: static;
-  width: 100%;
-  height: 100%;
-  background-color:white;
-  /* border-top-left-radius: 40px; */
-}
-
 .img-center img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 31%;
-  padding: 4%;
+  width: 23%;
+  padding: 3%;
 }
 
 .inf h2{
@@ -51,27 +42,31 @@ body {
   color: black;
 }
 
+.form-signin {
+  text-align: center;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
 form{
-  margin: 0 0 15px;
+  align-items: center;
+  position: static;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
-input[type=text] {
+.form-signin{
+  color: red;
+  font-weight: inherit;
+}
+
+input[type=text], input[type=password]  {
   width: 30%;
   height: 30px;
   padding: 10px 10px;
-  margin: 15px 0;
-  margin-left: 35%;
-  display: inline-block;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 30px;
-}
-
-input[type=password] {
-  width: 30%;
-  height: 30px;
-  padding: 10px 10px;
-  margin: 8px 0;
+  margin: 14px 0;
   margin-left: 35%;
   display: inline-block;
   border: 1px solid #000000;
@@ -98,7 +93,7 @@ input[type=password] {
 .button input{
   background-color: #40e0d0;
   padding: 10px 10px;
-  margin: 8px 0;
+  margin: 5px 0;
   margin-left: 45%;
   border: 1px inherit #000000;
   cursor: pointer;
@@ -111,7 +106,11 @@ input[type=password] {
   background-color: #ffffff;
   font-weight: bolder;
 }
-  
-  
-  
- 
+
+.footer {
+  position: absolute;  
+  bottom: 0;  
+  width: 100%;  
+  height: 45px;  
+  background-color: black;
+}
