@@ -24,5 +24,5 @@
 
         mysqli_close($conn);
     }
-header('location:../view/register/cadastroCliente.php');
+header('location:../view/area-cliente/demanda.php');
 ?>

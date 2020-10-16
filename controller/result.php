@@ -17,15 +17,15 @@ if(mysqli_num_rows($result) > 0){
     // Leitura da resposta da Execução
     $retornoDoSelect = mysqli_fetch_array($result);
     // print_r($retornoDoSelect);
-    echo("id = ".$retornoDoSelect['id']);
+    echo("idusuario = ".$retornoDoSelect['idusuario']);
     echo("<br>email = ".$retornoDoSelect['email']);
     echo("<br>senha = ".$retornoDoSelect['senha']);
 
-    $_SESSION['id'] = $retornoDoSelect['id'];
+    $_SESSION['idusuario'] = $retornoDoSelect['idusuario'];
     $_SESSION['email'] = $retornoDoSelect['email'];
     $_SESSION['senha'] = $retornoDoSelect['senha'];
 
-    // header('location:../../demanda.php');
+    header('location: ../view/area-cliente/demanda.php');
 }else{
     $_SESSION["erro"] = "<br>Usuário ou senha inválidos<br>";
     // header("location:../index.php");

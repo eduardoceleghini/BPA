@@ -33,9 +33,9 @@
 
             <div class="card-right">
 
-                <div class="img-center-cad">
+                <!-- <div class="img-center-cad">
                     <img src="../../img/hands.png">
-                </div>
+                </div> -->
 
                 <form action="../../controller/cadastroDemandaQuery.php" id="form1" method="post">
                     <div class="titulo">
@@ -46,7 +46,7 @@
                             <select class="form-control" id="Estado">
                                 <option>Selecionar Estado</option>
                             </select>
-                            <br>
+                            
                         </div>
                         <div class="Cidade">
                             <select class="form-control" id="Cidade">
@@ -61,11 +61,13 @@
                                 <option value="servicosDomesticos">Serviços Domésticos</option>
                                 <option value="reformas">Reformas</option>
                             </select>
-                        </div><br>
+                        </div>
                         <div class="servicos"><select id="servicos" name="servicos">
                         <option value="" disabled selected hidden>Selecione o Serviço</option>
                         </select></div>
-                        <textarea name="descricao" cols="50" rows="4" form="form1" placeholder="Descrição..." id="descricao" required></textarea><br>
+                        <div class="textareadiv">
+                            <textarea name="descricao" cols="50" rows="4" form="form1" placeholder="Descrição..." id="descricao" required></textarea><br>
+                        </div><br>
                         <div class="button-enviar">
                             <input type="submit" value="Enviar" class="btn" onclick="document.getElementById('demo').innerHTML = Date()">
                         </div>
