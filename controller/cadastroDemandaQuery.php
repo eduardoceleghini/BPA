@@ -23,9 +23,21 @@
         
 
     }else{
-        $_SESSION['obg'] = "Deu certo a Inserção! ";
+        $query_cadastro1 = "INSERT INTO profissional (iddemanda) SELECT MAX(iddemanda) FROM demanda;";
+
+        if(!mysqli_query($conn, $query_cadastro1)){
+            die("$query_cadastro1 <br> Falha na Execução da Query"
+            ."<br>".mysqli_errno($conn)
+            ." -> ".mysqli_error($conn)
+            );
+            mysqli_close($conn);
+            
+    
+        }else{
+            mysqli_close($conn);
+        }
 
         mysqli_close($conn);
     }
-header('location:../view/area-profissional/pedidos-profissional.php');
+header('location:../view/area-cliente/dashboard.php');
 ?>

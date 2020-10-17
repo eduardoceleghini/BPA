@@ -24,5 +24,5 @@
 
         mysqli_close($conn);
     }
-header('location:../view/area-cliente/demanda.php');
+header('location:../view/login/login.php');
 ?>

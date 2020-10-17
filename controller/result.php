@@ -34,7 +34,7 @@
 // fecha a conexão com BD
 mysqli_close($conn);
 
-    header('location: ../../bpa/view/area-cliente/demanda.php');
+    header('location: ../../bpa-1/view/area-profissional/pedidos-profissional.php');
     
     // fecha a conexão com BD
     mysqli_close($conn);

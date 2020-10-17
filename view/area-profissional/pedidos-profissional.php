@@ -35,13 +35,19 @@ $servico = mysqli_real_escape_string($conn, $_SESSION['servico']);
         <?php
             $query = "SELECT *
             FROM demanda
+            LEFT JOIN profissional ON demanda.iddemanda = profissional.iddemanda
             INNER JOIN usuario ON demanda.idusuario = usuario.idusuario
-            WHERE tipo = 0 AND demanda.categoria = '$categoria' AND demanda.servico = '$servico' ";
+            WHERE tipo = 0 
+            AND demanda.categoria = '$categoria' 
+            AND demanda.servico = '$servico' 
+            AND profissional.status = 0 ";
             $result = mysqli_query($conn, $query );
             if($result){
                 while ($row = $result->fetch_assoc()) {
                     echo '<div class="caixa">';
-                        echo '<form action="../../controller/pedidosProfissionalQuery.php" id="form1" method="post">';
+                        echo '<form action="../../../bpa-1/controller/pedidosProfissionalQuery.php" id="form1" method="post">';
+                            echo '<input type="hidden" name="iddemanda" id=iddemanda value="'.$row['iddemanda'].' " />';
+                            echo $row['iddemanda'].'<br>';
                             echo '<h4>Nome</h4>';
                             echo $row['nome'].'<br>';
                             echo '<h4>Data</h4>';
