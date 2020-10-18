@@ -17,20 +17,26 @@
     // Leitura da resposta da Execução
     $retornoDoSelect = mysqli_fetch_array($result);
     // print_r($retornoDoSelect);
-    echo("id = ".$retornoDoSelect['id']);
+    echo("idusuario = ".$retornoDoSelect['idusuario']);
     echo("<br>email = ".$retornoDoSelect['email']);
     echo("<br>senha = ".$retornoDoSelect['senha']);
 
-    $_SESSION['id'] = $retornoDoSelect['id'];
+    $_SESSION['idusuario'] = $retornoDoSelect['idusuario'];
     $_SESSION['email'] = $retornoDoSelect['email'];
     $_SESSION['senha'] = $retornoDoSelect['senha'];
 
-    header('location: ../../bpa/view/area-cliente/demanda.php');
-    }else{
-    $_SESSION['msg'] = "<div class='alert alert-danger'>E-mail ou Senha estão incorretos!</div>";
-    header("Location: ../../bpa/view/login/login.php");
-    }
+    header('location: ../view/area-cliente/demanda.php');
+}else{
+    $_SESSION["erro"] = "<br>Usuário ou senha inválidos<br>";
+    // header("location:../index.php");
+}
+
+// fecha a conexão com BD
+mysqli_close($conn);
+
+    header('location: ../../bpa-1/view/area-profissional/pedidos-profissional.php');
     
     // fecha a conexão com BD
     mysqli_close($conn);
+
 ?>
