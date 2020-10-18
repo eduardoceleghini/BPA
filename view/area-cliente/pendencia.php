@@ -57,7 +57,7 @@
                     <td><?php echo $retornoDoSelect['servico'].'<br>'; ?></td>
                     <td><?php echo $retornoDoSelect['data'].'<br>'; ?></td>
                     <td><a href="../../controller/pendencia.php?iddemanda=<?php echo ($retornoDoSelect["iddemanda"]); ?> 
-                    "style="color: black; text-decoration: none; border-radius: 10px solid black; cursor: pointer;">Concluído</a></style></td>
+                    "style="color: green; font-weight: bold; text-decoration: none; border-radius: 10px solid black; cursor: pointer;">Concluído</a></style></td>
                     </tr><?php
                 }  
             }else{
