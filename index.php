@@ -39,14 +39,13 @@ session_start();
                 <div class="esquerda-button">
 
                     <div class="login">
-                        <a href="./view/login/login.php">Login</a>
+                        <a href="./bpa-main/view/login/login.php">Login</a>
                     </div>
 
                     <div class="cadastrar">
 
-                        <a href="./view/user/bot-redire-usuario.php">Cadastrar-se</a>
 
-                        <a href="../bpa/view/user/bot-redire-usuario.php">Cadastrar</a>
+                        <a href="../bpa-main/view/user/bot-redire-usuario.php">Cadastrar</a>
 
                     </div>
 
