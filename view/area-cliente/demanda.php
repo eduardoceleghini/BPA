@@ -8,9 +8,7 @@
 
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-        <link rel="stylesheet" href="../../css/demanda.css">
-
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="../../css/demanda.css" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous">
         </script>
@@ -22,25 +20,17 @@
     <body>   
         <div class="container">
 
-            <header id="titulo">
-
                 <div class="desc-text">
                     <h1>Insira as informações para efetuar sua Demanda!</h1>
                 </div>
-
-            </header>
             
-
-            <div class="card-right">
-
-                <!-- <div class="img-center-cad">
-                    <img src="../../img/hands.png">
-                </div> -->
+            <div class="card-center">
 
                 <form action="../../controller/cadastroDemandaQuery.php" id="form1" method="post">
                     <div class="titulo">
                         <h2>Preencha os Campos com os dados necessários para Concluir sua Demanda!</h2>
                     </div>
+
                     <div class="Demanda">
                         <div class="Estado">
                             <select class="form-control" id="Estado">
@@ -48,11 +38,13 @@
                             </select>
                             
                         </div>
+
                         <div class="Cidade">
                             <select class="form-control" id="Cidade">
                                     <option>Selecionar Cidade</option>
                             </select>
                         </div>
+
                         <div class="categoria">
                             <select id="categoria" name="categoria" onchange="populate(this.id,'servicos')">
                                 <option value="" disabled selected hidden>Selecione a Categoria</option>
@@ -62,12 +54,16 @@
                                 <option value="reformas">Reformas</option>
                             </select>
                         </div>
+
                         <div class="servicos"><select id="servicos" name="servicos">
+
                         <option value="" disabled selected hidden>Selecione o Serviço</option>
                         </select></div>
+
                         <div class="textareadiv">
                             <textarea name="descricao" cols="50" rows="4" form="form1" placeholder="Descrição..." id="descricao" required></textarea><br>
-                        </div><br>
+                        </div>
+
                         <div class="button-enviar">
                             <input type="submit" value="Enviar" class="btn" onclick="document.getElementById('demo').innerHTML = Date()">
                         </div>

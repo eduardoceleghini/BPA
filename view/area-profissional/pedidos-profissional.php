@@ -47,7 +47,7 @@ $servico = mysqli_real_escape_string($conn, $_SESSION['servico']);
                     echo '<div class="caixa">';
                         echo '<form action="../../../bpa-1/controller/pedidosProfissionalQuery.php" id="form1" method="post">';
                             echo '<input type="hidden" name="iddemanda" id=iddemanda value="'.$row['iddemanda'].' " />';
-                            echo $row['iddemanda'].'<br>';
+                            // echo $row['iddemanda'].'<br>';
                             echo '<h4>Nome</h4>';
                             echo $row['nome'].'<br>';
                             echo '<h4>Data</h4>';
