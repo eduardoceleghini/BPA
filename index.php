@@ -15,23 +15,19 @@ session_start();
 		<div id="page-wrapper">
 
 				<header id="header" class="alt">
-					<h1><a href="index.php">   BPA        </a>    Busca de Profissionais Autônomos</h1>
+					<div class= "border">
+						<h1><a href="index.php">   BPA        </a>    Busca de Profissionais Autônomos</h1>
+					</div>
 					<nav id="nav">
 						<ul>
 							<li>
+								<a href="../bpa-main/view/login/login.php" class="icon solid fa-angle-down">Login</a>
+								<a href="../bpa-main/view/user/redirecionarUser.php" class="icon solid fa-angle-down">Cadastrar</a>
 								<a href="sobrenos.php" class="icon solid fa-angle-down">Sobre Nós</a>
 							</li>
 						</ul>
 					</nav>
 				</header>
-
-				<section id="banner">
-					<p>Encontre Profissionais confiavéis de acordo com a sua nessecidade no Busca de Profissionais Autônomos!</p>
-					<ul class="actions special">
-						<li><a href="../bpa-main/view/login/login.php" class="button primary">Login</a></li>
-						<li><a href="../bpa-main/view/user/redirecionarUser.php" class="button">Cadastrar</a></li>
-					</ul>
-				</section>
 
 				<section id="main" class="container">
 
@@ -52,10 +48,15 @@ session_start();
 
 				</section>
 
-				<footer id="footer">
-					<ul class="copyright">
-						<li>&copy; reservado.</li>
+				<section id="banner">
+					<p>Encontre Profissionais confiavéis de acordo com a sua nessecidade no Busca de Profissionais Autônomos!</p>
+					<ul class="actions special">
+						<li><a href="../bpa-main/view/login/login.php" class="button primary">Login</a></li>
+						<li><a href="../bpa-main/view/user/redirecionarUser.php" class="button">Cadastrar</a></li>
 					</ul>
+				</section>
+
+				<footer id="footer">
 				</footer>
 
 		</div>
