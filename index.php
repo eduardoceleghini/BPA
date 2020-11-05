@@ -21,8 +21,6 @@ session_start();
 					<nav id="nav">
 						<ul>
 							<li>
-								<a href="../bpa-main/view/login/login.php" class="icon solid fa-angle-down">Login</a>
-								<a href="../bpa-main/view/user/redirecionarUser.php" class="icon solid fa-angle-down">Cadastrar</a>
 								<a href="sobrenos.php" class="icon solid fa-angle-down">Sobre Nós</a>
 							</li>
 						</ul>
