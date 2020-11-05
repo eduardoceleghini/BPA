@@ -1,7 +1,7 @@
 <?php
 
     //Conexão para concluir o cadastro
-    include_once("../connection/conexao.php");
+    include_once("../db/connection.php");
     session_start();
 
     $nome = mysqli_real_escape_string($conn, $_POST['nome']);

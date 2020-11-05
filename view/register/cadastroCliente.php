@@ -25,7 +25,7 @@
         <div class="card-center">
 
             <div class="img-center-cad">
-                <img src="../../img/GDPR-rafiki.svg">
+                <img src="../../img/Authentication-rafiki.png">
             </div>
 
             <!--Form para cadastrar o usuário-->
