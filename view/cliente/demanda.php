@@ -8,22 +8,58 @@
 
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-        <link rel="stylesheet"  href="../../css/demanda.css" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-            crossorigin="anonymous">
-        </script>
+        <link rel="stylesheet"  href="../../css/cliente/demanda.css" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+            
     </head>
 
     <body>   
+    
         <div class="container">
+                <input type="checkbox" id="check">
+            <header>
+            <label for="check">
+                <i class="fas fa-bars" id="sidebar_btn"></i>
+            </label>
+            <div class="left_area">
+                <h3>BPA <span>"Solicite Profissionais"</span></h3>
+            </div>
+            <div class="right_area">
+                <a href="#" class="logout_btn">Sair</a>
+            </div>
+            </header>
+            <div class="mobile_nav">
+            <div class="nav_bar">
+                <img src="../../img/avatar.jpg" class="mobile_profile_image" alt="">
+                <i class="fa fa-bars nav_btn"></i>
+            </div>
+            <div class="mobile_nav_items">
+            <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+            <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
+            <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
+            <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
+            <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
+            <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
+            <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
 
-                <div class="desc-text">
-                    <h1>Insira as informações para efetuar sua Demanda!</h1>
+        </div>
+    </div>
+                <div class="sidebar">
+                    <div class="profile_info">
+                    <img src="../../img/avatar.jpg" class="profile_image" alt="">
                 </div>
-            
+                <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
+                <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
+                <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
+                <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
+                <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
+                <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+            </div>
+
             <div class="card-center">
 
                 <form action="../../controller/cadastroDemandaQuery.php" id="form1" method="post">
@@ -61,7 +97,7 @@
                         </select></div>
 
                         <div class="textareadiv">
-                            <textarea name="descricao" cols="50" rows="4" form="form1" placeholder="Descrição..." id="descricao" required></textarea><br>
+                            <textarea name="descricao" cols="50" rows="4" style="border-radius: 10px; padding: 10px"  form="form1" placeholder="Necessito de um reparo na tela do meu Notebook" id="descricao" required></textarea><br>
                         </div>
 
                         <div class="button-enviar">
@@ -80,6 +116,7 @@
         ?>
 
         <!-- Script Data Automática -->
+        
         <script type="text/javascript" src="../../js/servicos.js"></script>
         <script type="text/javascript">
             n =  new Date();
@@ -91,6 +128,7 @@
 
 
         <!-- Script Estado e Local -->
+
         <script>
             $(document).ready(function(){
                 carregar_json('Estado');
@@ -129,5 +167,12 @@
 
             });
         </script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
     </body>
 </html>
