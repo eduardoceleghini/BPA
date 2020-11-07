@@ -12,6 +12,7 @@
   <body>
 
     <input type="checkbox" id="check">
+    
     <header>
       <label for="check">
         <i class="fas fa-bars" id="sidebar_btn"></i>
@@ -20,7 +21,7 @@
         <h3>BPA <span>"Busca por Profissionais"</span></h3>
       </div>
       <div class="right_area">
-        <a href="../index.php" class="logout_btn">Sair</a>
+        <a href="../../index.php" class="logout_btn">Sair</a>
       </div>
     </header>
     <div class="mobile_nav">
@@ -34,8 +35,7 @@
         <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
         <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
         <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-        <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-        <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+        <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
       </div>
     </div>
     
@@ -44,20 +44,32 @@
       <div class="profile_info">
         <img src="../../img/avatar.jpg" class="profile_image" alt="">
       
+        <?php
+          include_once("../../db/connection.php");
+          session_start();
+
+          $idusuario = mysqli_real_escape_string($conn, $_SESSION['idusuario']);
+          $query_select = "SELECT * FROM usuario WHERE idusuario = $idusuario ";
+          $result = mysqli_query($conn, $query_select);
+
+          $retornoDoSelect = mysqli_fetch_array($result);
+
+          $nome = mysqli_real_escape_string($conn, $retornoDoSelect['nome']);
+          echo $nome.'<br><br>';
+        ?>
+
         </div>
           <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
           <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
           <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
           <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
           <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-          <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-          <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+          <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
         </div>
 
      <div class="content">
 
       <div class="card">
-          <!-- arrumar frase -->
           <p> BEM VINDO </p><br><br>
           <p>“Obrigado por trazer sua disposição e sua alegria para o trabalho todos os dias.
           Sua postura permite que os<br>projetos se tornem mais fáceis de serem executados,
