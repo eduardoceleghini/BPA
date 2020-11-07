@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/login/login.css">
     <title>Faça seu Login</title>
 </head>
 
@@ -23,7 +23,7 @@ session_start();
 
         </header>
 
-            <form action="../../controller/result.php" method="post">
+            <form action="../../controller/loginQuery.php" method="post">
                    
                 <div class="img-center">
                     <img src="../../img/Security On-amico.svg">

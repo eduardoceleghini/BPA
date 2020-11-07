@@ -20,7 +20,7 @@
       </label>
 
       <div class="left_area">
-        <h3>BPA <span>"Busca por Profissionais"</span></h3>
+        <h3>BPA <span>"Busca por Profissionais Autônomos"</span></h3>
       </div>
 
       <div class="right_area">
@@ -42,8 +42,7 @@
         <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="../../view/profissional/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
         <a href="../../view/profissional/pedido.php"><i class="fas fa-table"></i><span>Pedido</span></a>
-        <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-        <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+        <a href="../../view/profissiona/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
       </div>
 
     </div>
@@ -52,12 +51,25 @@
       <div class="profile_info">
         <img src="../../img/avatar.jpg" class="profile_image" alt="">
 
+        <?php
+          include_once("../../db/connection.php");
+          session_start();
+
+          $idusuario = mysqli_real_escape_string($conn, $_SESSION['idusuario']);
+          $query_select = "SELECT * FROM usuario WHERE idusuario = $idusuario ";
+          $result = mysqli_query($conn, $query_select);
+
+          $retornoDoSelect = mysqli_fetch_array($result);
+
+          $nome = mysqli_real_escape_string($conn, $retornoDoSelect['nome']);
+          echo $nome.'<br><br><br>';
+        ?>
+
       </div>
         <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="../../view/profissional/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
         <a href="../../view/profissional/pedido.php"><i class="fas fa-table"></i><span>Pedido</span></a>
-        <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-        <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+        <a href="../../view/profissional/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
     </div>
 
     <div class="content">

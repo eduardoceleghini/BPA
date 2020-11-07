@@ -22,8 +22,8 @@ body {
   position: absolute; 
   text-align: center;
   width: 100%; 
-  height: 45px;
-  padding: 3px;
+  height: 50px;
+  padding: 1px;
   font-weight: lighter;
   background-color: black;
  }
@@ -32,8 +32,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 23%;
-  padding: 3%;
+  width: 25%;
+  padding: 5%;
 }
 
 .inf h2{
