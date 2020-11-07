@@ -69,14 +69,14 @@
 
                     <div class="Demanda">
                         <div class="Estado">
-                            <select class="form-control" id="Estado">
+                            <select class="form-control" id="Estado" name="estado">
                                 <option>Selecionar Estado</option>
                             </select>
                             
                         </div>
 
                         <div class="Cidade">
-                            <select class="form-control" id="Cidade">
+                            <select class="form-control" id="Cidade" name="cidade">
                                     <option>Selecionar Cidade</option>
                             </select>
                         </div>

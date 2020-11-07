@@ -4,7 +4,7 @@
     session_start();
     include_once("../db/connection.php");
 
-    // $idusuario = mysqli_real_escape_string($conn, $_SESSION['idusuario']);
+    $idusuario = mysqli_real_escape_string($conn, $_SESSION['idusuario']);
     $descricao = mysqli_real_escape_string($conn, $_POST['descricao']);
     $categoria = mysqli_real_escape_string($conn, $_POST['categoria']);
     $servicos = mysqli_real_escape_string($conn, $_POST['servicos']);
