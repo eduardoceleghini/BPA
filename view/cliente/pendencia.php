@@ -24,7 +24,7 @@
       </label>
 
       <div class="left_area">
-        <h3><span>"Busca de Profissionais Autonômos"</span></h3>
+        <h3><span>"PENDÊNCIA"</span></h3>
       </div>
 
       <div class="right_area">
@@ -46,9 +46,7 @@
         <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
         <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
         <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
-        <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-        <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-        <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+        <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
 
       </div>
 
@@ -59,17 +57,13 @@
       <div class="profile_info">
         <img src="../../img/avatar.jpg" class="profile_image" alt="">
 
-        <!-- echo: nome usuario -->
-        
       </div>
 
       <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
         <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
         <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
-        <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-        <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-        <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+        <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
     </div>
 
     <div class="content">
@@ -118,7 +112,7 @@
                     </tr><?php
                 }  
             }else{
-                echo("Erro nenhum dado");
+                // echo("Erro nenhum dado");
             }
           
             mysqli_close($conn);

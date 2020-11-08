@@ -62,7 +62,7 @@
           $retornoDoSelect = mysqli_fetch_array($result);
 
           $nome = mysqli_real_escape_string($conn, $retornoDoSelect['nome']);
-          echo $nome.'<br><br><br>';
+          echo "<span style='font-weight:bold; text-align: center;'>$nome <br><br><br> </span>"
         ?>
 
       </div>

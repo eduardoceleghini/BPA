@@ -30,7 +30,6 @@
         <i class="fa fa-bars nav_btn"></i>
       </div>
       <div class="mobile_nav_items">
-        <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
         <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
         <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
@@ -55,11 +54,10 @@
           $retornoDoSelect = mysqli_fetch_array($result);
 
           $nome = mysqli_real_escape_string($conn, $retornoDoSelect['nome']);
-          echo $nome.'<br><br>';
+          echo "<span style='font-weight:bold; text-align: center;'>$nome <br><br> </span>"
         ?>
 
         </div>
-          <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
           <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
           <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
           <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
