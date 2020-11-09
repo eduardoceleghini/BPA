@@ -74,20 +74,21 @@ header{
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .sidebar .profile_info h4{
   color: black;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .sidebar a{
   color: black;
   display: block;
   width: 100%;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 70px;
   text-decoration: none;
   padding-left: 40px;
   box-sizing: border-box;
@@ -136,14 +137,13 @@ label #sidebar_btn:hover{
 }
 
 .content{
-  width: (100% - 250px);
+  width: (100% - 90px);
   margin-top: 60px;
   padding: 10px;
   margin-left: 200px;
   background-position: center;
   background-size: cover;
-  height: 90vh;
-  transition: 0.5s;
+  height: 80vh;
 }
 
 #check:checked ~ .content{
@@ -164,7 +164,7 @@ label #sidebar_btn:hover{
 
 .content .card p{
   background: #fff;
-  padding: 15px;
+  padding: 5px;
   margin-bottom: 10px;
   font-size: 20px;
   opacity: 0.8;
@@ -187,7 +187,7 @@ label #sidebar_btn:hover{
 }
 
 .container th h1 {
-  font-size: 1em;
+  font-size: 15px;
   text-align: left;
   color: white;
 }
@@ -195,7 +195,7 @@ label #sidebar_btn:hover{
 .container td {
   color: white;
   font-weight: inherit;
-  font-size: 5em;
+  font-size: 10px;
   -webkit-box-shadow: 0 2px 2px -2px rgb(255, 255, 255);
   -moz-box-shadow: 0 2px 2px -2px rgb(0, 0, 0); 
   box-shadow: 0 2px 2px -2px rgb(0, 0, 0);
@@ -204,17 +204,17 @@ label #sidebar_btn:hover{
 .container {
     text-align: center;
     overflow: hidden;
-    width: 90%;
-    height: 5%;
+    width: 100%;
     margin: 0 auto;
     display: table;
-    padding: 5%;
-}
+    padding: 3%;
+    margin-left: 2.1%  
+  }
 
 .container td, .container th {
   padding-bottom: 2%;
   padding-top: 1%;
-  padding-left:2%;
+  padding-left:-15%;
   color: white;
 }
 
@@ -234,24 +234,22 @@ label #sidebar_btn:hover{
 .container td{
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     cursor: no-drop;
-    text-transform: uppercase;
-    padding: 20px;
+    padding: 10px;
 }
 
 .container td:first-child {
     color: white; 
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     font-weight: inherit;
-    text-transform: uppercase;
     cursor: no-drop;
 }
 
 .container tr:hover {
     background-color: rgb(#131212);
-    -webkit-box-shadow: 0 6px 6px -6px #080808;
+    -webkit-box-shadow: 0 6px 6px -6px #080808; 
     -moz-box-shadow: 0 6px 6px -6px #212529;
     box-shadow: 0 6px 6px -6px #212529;
 }

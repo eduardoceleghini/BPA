@@ -1,10 +1,11 @@
 <?php
 
 include("../../db/connection.php");
-
     $query = "SELECT *
-    FROM demanda
-    INNER JOIN usuario ON demanda.idusuario = usuario.idusuario";
+    FROM profissional
+    LEFT JOIN usuario ON profissional.idusuario = usuario.idusuario
+    INNER JOIN demanda ON profissional.iddemanda = demanda.iddemanda
+    WHERE tipo = 1";
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ include("../../db/connection.php");
         </label>
 
         <div class="left_area">
-            <h3><span>"Candidatos"</span></h3>
+            <h3><span>"CANDIDATOS"</span></h3>
         </div>
 
         <div class="right_area">
@@ -50,10 +51,7 @@ include("../../db/connection.php");
                 <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                 <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
                 <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
-                <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
-                <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-                <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-                <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+                <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
             </div>
 
         </div>
@@ -67,10 +65,7 @@ include("../../db/connection.php");
             <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                 <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
                 <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
-                <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
-                <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-                <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-                <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+                <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
             </div>
         </div>
 
@@ -96,11 +91,23 @@ include("../../db/connection.php");
                             </th>
 
                             <th>
-                                <h2>E-mail</h2>
+                                <h2>Categoria</h2>
                             </th>
-                    
+
+                            <th>
+                                <h2>Serviço</h2>
+                            </th>
+                            
+                            <th>
+                                <h2>Descrição da Demanda</h2>
+                            </th>
+
                             <th>
                                 <h2>Telefone</h2>
+                            </th>
+                            
+                            <th>
+                                <h2>Ações</h2>
                             </th>
 
                             <tr>
@@ -112,8 +119,18 @@ include("../../db/connection.php");
 
                                 ?><tr>
                                     <td><?php echo $row['nome'].'<br>'; ?></td>
-                                    <td><?php echo $row['email'].'<br>'; ?></td>
-                                    <td><?php echo $row['telefone'].'<br>'; ?></td>
+                                    <td><?php echo $row['categoria'].'<br>'; ?></td>
+                                    <td><?php echo $row['servico'].'<br>'; ?></td>
+                                    <td><?php echo $row['descricao'].'<br>'; ?></td>
+                                    <td><a href="https://api.whatsapp.com/send?phone=<?php echo $row['telefone']; ?>" 
+                                    target="_blank">
+                                    <img  class="whatsapp" src="https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png" />
+                                    </a></td>
+                                    
+                                    <!-- ARRUMAR DELETE -->
+                                    <td><a href="../../controller/candidatoQuery.php?iddemanda=<?php echo ($row["iddemanda"]); ?> 
+                                    "style="color: green; font-weight: bold; text-decoration: none; cursor: pointer;">Concluído</a></style></td>
+                                    </tr>
                                 </tr><?php
                                         
                                 }

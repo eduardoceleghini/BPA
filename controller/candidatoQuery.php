@@ -2,13 +2,14 @@
     $iddemanda = $_GET["iddemanda"];
 
     include_once('../db/connection.php');
-    $query = "DELETE FROM demanda WHERE iddemanda = $iddemanda";
+    $query = "DELETE FROM demanda 
+            WHERE iddemanda = $iddemanda";
 
     $resposta = mysqli_query($conn,$query);
 
     if($resposta){
         echo("OK");
-        header("location:../../bpa-main/view/cliente/pendencia.php");
+        header("location:../../bpa-main/view/cliente/candidato.php");
     }else{
         echo("ERRO: ".mysqli_errno($conn)."<br>".mysqli_error($conn));
     }
