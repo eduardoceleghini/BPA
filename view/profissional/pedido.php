@@ -36,7 +36,6 @@
       <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
       <a href="../../view/profissional/pedido.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
       <a href="../../view/profissional/perfil.php"><i class="fas fa-cogs"></i><span>Pedido</span></a>
-      <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
       <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
     </div>
 
@@ -51,7 +50,6 @@
         <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="../../view/profissional/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
         <a href="../../view/profissional/pedido.php"><i class="fas fa-cogs"></i><span>Pedido</span></a>
-        <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
         <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
       </div>
     </div>
@@ -77,7 +75,6 @@
           ?>
 
           <div class="sub-container">
-          <!-- <img src="../../img/avatar.jpg" alt="10px"> -->
             <?php
               $query = "SELECT *
               FROM demanda
@@ -91,7 +88,7 @@
               if($result){
                   while ($row = $result->fetch_assoc()) {
                       echo '<div class="caixa">';
-                          echo '<form action="../../../bpa-1/controller/pedidosProfissionalQuery.php" id="form1" method="post">';
+                          echo '<form action="../../../bpa-main/controller/pedidoProfissionalQuery.php" id="form1" method="post">';
                               echo '<input type="hidden" name="iddemanda" id=iddemanda value="'.$row['iddemanda'].' " />';
                               // echo $row['iddemanda'].'<br>';
                               echo '<h4>Nome do Cliente</h4>';
@@ -101,7 +98,7 @@
                               echo $row['data'].'<br>';
 
                               echo '<h4>Estado</h4>';
-                              echo $row['estados'].'<br>';
+                              echo $row['estado'].'<br>';
                           
                               echo '<h4>Cidade</h4>';
                               echo $row['cidade'].'<br>';

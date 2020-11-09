@@ -28,7 +28,7 @@
                 <h3>BPA <span>"Solicite Profissionais"</span></h3>
             </div>
             <div class="right_area">
-                <a href="#" class="logout_btn">Sair</a>
+                <a href="../../index.php" class="logout_btn">Sair</a>
             </div>
             </header>
             <div class="mobile_nav">
