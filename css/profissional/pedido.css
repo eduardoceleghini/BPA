@@ -12,7 +12,7 @@ header{
     width: calc(100% - 0%);
     top: 0;
     height: 70px;
-    font-family: 'Segoe UI';
+    font-family: sans-serif;
   }
   
   .left_area h3{
