@@ -60,27 +60,29 @@
                         </div>
 
 
-                    <div class="Demanda">
+                    <!-- <div class="cadastro"> -->
 
                         <div class="categoria">
-                            <select id="categoria" name="categoria" onchange="populate(this.id,'servicos')">
-                                <option value="" disabled selected hidden>Selecione a Categoria</option>
-                                <option value="assistenciaTecnica">Assistência Técnica</option>
-                                <option value="designTecnologia">Design e Tecnologia</option>
-                                <option value="servicosDomesticos">Serviços Domésticos</option>
-                                <option value="reformas">Reformas</option>
-                            </select>
+                                <select id="categoria" name="categoria" onchange="populate(this.id,'servicos')">
+                                    <option value="" disabled selected hidden>Selecione a Categoria</option>
+                                    <option value="assistenciaTecnica">Assistência Técnica</option>
+                                    <option value="designTecnologia">Design e Tecnologia</option>
+                                    <option value="servicosDomesticos">Serviços Domésticos</option>
+                                    <option value="reformas">Reformas</option>
+                                </select>
+                            </div>
+
+                            <div class="servicos"><select id="servicos" name="servicos">
+
+                            <option value="" disabled selected hidden>Selecione o Serviço</option>
+                            </select></div>
+
+                            <div class="container-contact100-form-btn">
+                                <button class="contact100-form-btn">
+                                <input type="submit" name="cadastrar" id="Entrar" value="Entrar"></button>
+                            </div>
                         </div>
 
-                        <div class="servicos"><select id="servicos" name="servicos">
-
-                        <option value="" disabled selected hidden>Selecione o Serviço</option></select></div>
-                            
-                        <div class="container-contact100-form-btn">
-                            <button class="contact100-form-btn">
-                            <input type="submit" name="cadastrar" id="Entrar" value="Entrar"></button>
-                        </div>
-                    </div>
             </form>
         </div>
 			

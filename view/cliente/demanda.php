@@ -39,11 +39,9 @@
             <div class="mobile_nav_items">
             <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
             <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
-            <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
             <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
             <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-            <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-            <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+            <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
 
         </div>
     </div>
@@ -53,11 +51,9 @@
                 </div>
                 <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                 <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
-                <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
                 <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
                 <a href="../../view/cliente/pendencia.php"><i class="fas fa-table"></i><span>Pendências</span></a>
-                <a href="../../view/user/sobrenos.php"><i class="fas fa-info-circle"></i><span>Sobre</span></a>
-                <a href="../../view/user/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+                <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
             </div>
 
             <div class="card-center">

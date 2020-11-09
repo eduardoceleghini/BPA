@@ -12,28 +12,32 @@ header{
     width: calc(100% - 0%);
     top: 0;
     height: 70px;
-    font-family: 'Segoe UI';
+  }
+  
+  .left_area h3{
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 1000;
   }
   
   .left_area span{
-    text-transform: uppercase;
-    font-weight: 1000;
     color: #19B3D3;
-    font-size: 25px;
-    text-align: left;
-    padding: 40px;
+    padding-left: 565px;
+    font-size: 20px;
   }
   
   .logout_btn{
-    padding: 5px;
+    padding: 10px;
     background: #40e0d0;
     text-decoration: none;
     float: right;
-    margin-top: -40px;
+    margin-top: -29px;
     margin-right: 40px;
     border-radius: 2px;
-    font-size: 17px;
-    font-weight: 900px;
+    font-size: 15px;
+    font-weight: 900;
     color: black;
     transition: 0.5s;
     transition-property: background;
@@ -52,7 +56,7 @@ header{
     position: fixed;
     left: 0;
     width: 250px;
-    height: calc(100% - 0%);
+    height: calc(100% - 9%);
     transition: 0.5s;
     transition-property: left;
     overflow-y: auto;
@@ -75,7 +79,7 @@ header{
   .sidebar .profile_info h4{
     color: black;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   .sidebar a{
@@ -84,12 +88,10 @@ header{
     width: 100%;
     line-height: 60px;
     text-decoration: none;
-    padding-left: 30px;
+    padding-left: 40px;
     box-sizing: border-box;
     transition: 0.5s;
     transition-property: background;
-    font-size: 20px;
-    margin-top: 10px;
   }
   
   .sidebar a:hover{
@@ -107,7 +109,7 @@ header{
     cursor: pointer;
     left: 20px;
     font-size: 20px;
-    margin: 8px 0;
+    margin: 3px 0;
     transition: 0.5s;
     transition-property: color;
   }
@@ -131,19 +133,15 @@ header{
     padding: 10px;
     transition: 0.7s;
   }
-
-  h1{
-    text-align: center;
-    padding: 45px;
-  }
+  
   .content{
-    width: (100% - 100px);
+    width: (100% - 250px);
     margin-top: 60px;
     padding: 10px;
     margin-left: 200px;
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 90vh;
     transition: 0.5s;
   }
   
@@ -162,46 +160,16 @@ header{
   .mobile_nav{
     display: none;
   }
-
-#dados{
-  margin-left: 30%;
-  text-align: justify;
-  font-size: 30px;
-  margin-top: 80px;
-}
   
-  #dados input[type=text], input[type=email], input[type=tel]{
-    width:60%;
-    box-sizing:border-box;
-    font-size: 15px;
-    padding: 7px;
+  .content {
+    align-items: center;
+    margin-right: 150px;
   }
   
-  #dados input[type=button], input[type=submit]{
-    background-color: #40e0d0;
-    padding: 10px 10px;
-    margin: 50px 15px;
-    margin-left: 7%;
-    border: 2px inherit #000000;
-    font-weight: bold;
-    cursor: pointer;
-    width: 19%;
-    border-radius: 30px;
-    font-weight: normal;
-    color: black;
-  }
-  
-  #dados input[type=button]:hover, input[type=submit]:hover{
-    background-color: #000000;
-    font-weight: bolder;
-    color: white;
-  }
-  
-  #dados input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus{
-    background-color: rgb(212, 244, 245);
+  .card p{
+    padding: 15px;
+    margin-top: 120px;
+    font-size: 25px;
+    opacity: 0.8;
     }
   
-  #dados input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover{
-      background-color: rgb(212, 244, 245);
-  }
-    
