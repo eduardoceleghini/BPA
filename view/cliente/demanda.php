@@ -54,54 +54,59 @@
                 <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
             </div>
 
-            <div class="card-center">
+             <div class="content">
 
-                <form action="../../controller/cadastroDemandaQuery.php" id="form1" method="post">
-                    <div class="titulo">
-                        <h2>Preencha os Campos com os dados necessários para Concluir sua Demanda!</h2>
+                <div class="card">
+
+                    <div class="card-center">
+
+                        <form action="../../controller/cadastroDemandaQuery.php" id="form1" method="post">
+                            <div class="titulo">
+                                <h2>Preencha os Campos com os dados necessários para Concluir sua Demanda!</h2>
+                            </div>
+
+                            <div class="Demanda">
+                                <div class="Estado">
+                                    <select class="form-control" id="Estado" name="estado">
+                                        <option>Selecionar Estado</option>
+                                    </select>
+                                    
+                                </div>
+
+                                <div class="Cidade">
+                                    <select class="form-control" id="Cidade" name="cidade">
+                                            <option>Selecionar Cidade</option>
+                                    </select>
+                                </div>
+
+                                <div class="categoria">
+                                    <select id="categoria" name="categoria" onchange="populate(this.id,'servicos')">
+                                        <option value="" disabled selected hidden>Selecione a Categoria</option>
+                                        <option value="assistenciaTecnica">Assistência Técnica</option>
+                                        <option value="designTecnologia">Design e Tecnologia</option>
+                                        <option value="servicosDomesticos">Serviços Domésticos</option>
+                                        <option value="reformas">Reformas</option>
+                                    </select>
+                                </div>
+
+                                <div class="servicos"><select id="servicos" name="servicos">
+
+                                <option value="" disabled selected hidden>Selecione o Serviço</option>
+                                </select></div>
+
+                                <div class="textareadiv">
+                                    <textarea name="descricao" cols="50" rows="5" style="border-radius: 10px; padding: 10px"  form="form1" placeholder="Necessito de um reparo na tela do meu Notebook" id="descricao" required></textarea><br>
+                                </div>
+
+                                <div class="button-enviar">
+                                    <input type="submit" value="Enviar" class="btn" onclick="document.getElementById('demo').innerHTML = Date()">
+                                </div>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="Demanda">
-                        <div class="Estado">
-                            <select class="form-control" id="Estado" name="estado">
-                                <option>Selecionar Estado</option>
-                            </select>
-                            
-                        </div>
-
-                        <div class="Cidade">
-                            <select class="form-control" id="Cidade" name="cidade">
-                                    <option>Selecionar Cidade</option>
-                            </select>
-                        </div>
-
-                        <div class="categoria">
-                            <select id="categoria" name="categoria" onchange="populate(this.id,'servicos')">
-                                <option value="" disabled selected hidden>Selecione a Categoria</option>
-                                <option value="assistenciaTecnica">Assistência Técnica</option>
-                                <option value="designTecnologia">Design e Tecnologia</option>
-                                <option value="servicosDomesticos">Serviços Domésticos</option>
-                                <option value="reformas">Reformas</option>
-                            </select>
-                        </div>
-
-                        <div class="servicos"><select id="servicos" name="servicos">
-
-                        <option value="" disabled selected hidden>Selecione o Serviço</option>
-                        </select></div>
-
-                        <div class="textareadiv">
-                            <textarea name="descricao" cols="50" rows="5" style="border-radius: 10px; padding: 10px"  form="form1" placeholder="Necessito de um reparo na tela do meu Notebook" id="descricao" required></textarea><br>
-                        </div>
-
-                        <div class="button-enviar">
-                            <input type="submit" value="Enviar" class="btn" onclick="document.getElementById('demo').innerHTML = Date()">
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-
         <?php
             if(isset($_SESSION['obg'])){
                 echo($_SESSION['obg']);
