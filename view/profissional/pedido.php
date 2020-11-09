@@ -38,7 +38,6 @@
 
     <div class="mobile_nav_items">
       <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-      <a href="../../view/profissional/pedido.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
       <a href="../../view/profissional/perfil.php"><i class="fas fa-cogs"></i><span>Pedido</span></a>
       <a href="../../view/profissional/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
     </div>
@@ -53,7 +52,6 @@
 
         <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="../../view/profissional/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
-        <a href="../../view/profissional/pedido.php"><i class="fas fa-cogs"></i><span>Pedido</span></a>
         <a href="../../view/profissional/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
       </div>
     </div>
