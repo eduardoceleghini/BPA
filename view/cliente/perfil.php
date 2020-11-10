@@ -35,9 +35,10 @@
     </div>
 
     <div class="mobile_nav_items">
-      <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-      <a href="../../view/profissional/pedido.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
-      <a href="../../view/profissional/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+        <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="../../view/cliente/demanda.php"><i class="fas fa-cogs"></i><span>Demanda</span></a>
+        <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
+        <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>>
     </div>
 
     </div>
@@ -47,10 +48,10 @@
       <div class="profile_info">
           <img src="../../img/avatar.jpg" class="profile_image" alt="">
         </div>
-
-      <a href="../../view/profissional/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-      <a href="../../view/profissional/pedido.php"><i class="fas fa-cogs"></i><span>Pedido</span></a>
-      <a href="../../view/profissional/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
+        <a href="../../view/cliente/dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="../../view/cliente/demanda.php"><i class="fas fa-cogs"></i><span>Demanda</span></a>
+        <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
+        <a href="../../view/cliente/config.php"><i class="fas fa-sliders-h"></i><span>Configuração</span></a>
         </div>
       </div>
 
