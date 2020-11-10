@@ -5,8 +5,17 @@
 }
 
 body {
-  font-family: 'Segoe UI';
-  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+header{
+  z-index: 1;
+  position: fixed;
+  background: #22242A;
+  padding: 20px;
+  width: calc(100% - 0%);
+  top: 0;
+  height: 70px;
 }
 
 .desc-text h1{ 
@@ -32,7 +41,7 @@ body {
   
 .titulo h2{
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
   color: black;
   padding: 25px;  
@@ -52,7 +61,7 @@ body {
 }
 
 .textareadiv {
-  margin-left: 293px;
+  margin-left: 291px;
 }
   
 .input[type=text]:focus, .textarea:focus{
@@ -107,18 +116,6 @@ body {
   color: white;
 } 
 
-/* ------------------------------ */
-
-header{
-  z-index: 1;
-  position: fixed;
-  background: #22242A;
-  padding: 35px;
-  width: calc(100% - 0%);
-  top: 0;
-  height: 40px;
-}
-
 .left_area h3{
   color: white;
   margin: 0;
@@ -126,12 +123,12 @@ header{
   font-size: 20px;
   font-weight: 1000;
   padding-left: 45px;
-  margin-top: -20px;
+  margin-top: -5px;
 }
 
 .left_area span{
   color: #19B3D3;
-  padding-left: 45px;
+  padding-left: 15px;
 }
 
 .logout_btn{
@@ -215,7 +212,7 @@ label #sidebar_btn{
   cursor: pointer;
   left: 15px;
   font-size: 25px;
-  margin-top: -15px;
+  margin-top: -3px;
   transition: 0.5s;
   transition-property: color;
 }
@@ -240,7 +237,7 @@ label #sidebar_btn:hover{
 
 .content{
   width: (100% - 250px);
-  margin-top: 0px;
+  margin-top: -5px;
   padding: 20px;
   margin-left: 20px;
   background: url(background.png) no-repeat;
