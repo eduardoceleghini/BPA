@@ -21,12 +21,14 @@ text-transform: uppercase;
 font-size: 20px;
 font-weight: 1000;
 padding-left: 45px;
+margin-top: -3px;
 }
 
 .left_area span{
 color: #19B3D3;
-padding-left: 35px;
+padding-left: 15px;
 }
+
 .logout_btn{
 padding: 5px;
 background: #40e0d0;
@@ -41,9 +43,11 @@ color: black;
 transition: 0.5s;
 transition-property: background;
 }
+
 .logout_btn:hover{
 background: red;
 }
+
 .sidebar{
 z-index: 1;
 top: 0;
@@ -58,23 +62,27 @@ transition: 0.5s;
 transition-property: left;
 overflow-y: auto;
 }
+
 .profile_info{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
 .sidebar .profile_info .profile_image{
 width: 100px;
 height: 100px;
 border-radius: 100px;
 margin-bottom: 10px;
 }  
+
 .sidebar .profile_info h4{
 color: black;
 margin-top: 0;
 margin-bottom: 20px;
 }
+
 .sidebar a{
 color: black;
 display: block;
@@ -86,12 +94,15 @@ box-sizing: border-box;
 transition: 0.5s;
 transition-property: background;
 }  
+
 .sidebar a:hover{
 background: #19B3D3;
 }
+
 .sidebar i{
 padding-right: 10px;
 } 
+
 label #sidebar_btn{
 z-index: 1;
 color: #fff;
@@ -103,10 +114,10 @@ margin: 2px 0;
 transition: 0.5s;
 transition-property: color;
 }
+
 label #sidebar_btn:hover{
 color: red;
 }
-/* #19B3D3 */
 
 #check:checked ~ .sidebar{
   left: -185px;
@@ -130,7 +141,7 @@ color: red;
   background: url(background.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   transition: 0.5s;
 }
 

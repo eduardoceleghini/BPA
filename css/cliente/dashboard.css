@@ -141,7 +141,7 @@ label #sidebar_btn:hover{
   background: url(background.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   transition: 0.5s;
 }
 
