@@ -93,23 +93,20 @@
                           echo '<form action="../../../bpa-main/controller/pedidoProfissionalQuery.php" id="form1" method="post">';
                               echo '<input type="hidden" name="iddemanda" id=iddemanda value="'.$row['iddemanda'].' " />';
                               // echo $row['iddemanda'].'<br>';
-                              echo '<h4>Nome do Cliente</h4>';
-                              echo $row['nome'].'<br>';
+                              echo '<p id="nomes"><span style="font-weight: bold">Nome do Cliente: </span>'.$row['nome'].'</p><br>';
 
-                              echo '<h4>Data</h4>';
-                              echo $row['data'].'<br>';
+                              echo '<p id="datas"><span style="font-weight: bold">Data: </span>'.$row['data'].'</p><br>';
 
-                              echo '<h4>Estado</h4>';
-                              echo $row['estado'].'<br>';
+                              echo '<p id="estados"><span style="font-weight: bold">Estado: </span>'.$row['estado'].'</p><br>';
                           
-                              echo '<h4>Cidade</h4>';
-                              echo $row['cidade'].'<br>';
+                              echo '<p id="cidades"><span style="font-weight: bold">Cidade: </span>'.$row['cidade'].'</p><br>';
 
-                              echo '<h4>Descrição do Pedido</h4>';
-                              echo $row['descricao'].'<br>';
-                              echo'<input type="submit" value="Aceitar" class="button-enviar">';
+                              echo '<p id="descricoes"><span style="font-weight: bold">Descrição do pedido: </span>'.$row['descricao'].'</p><br>';
+                              echo'<input type="submit" id="buttons" value="Aceitar" class="button-enviar">';
+                              
                           echo'</form>';
                       echo '</div>';
+                      echo '<br><br>';
                   }
               }else{
                   trigger_error('Invalid query: ' . $conn->error);
