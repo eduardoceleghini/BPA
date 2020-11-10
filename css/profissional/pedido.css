@@ -172,48 +172,58 @@ header{
 
 .sub-container{
   padding: 20px;
-  width: 400px;
+  /* width: 400px; */
   margin-bottom: 10px;
   margin-top: 20px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(92, 250, 242, 0.507);
+  /* background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(92, 250, 242, 0.507); */
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
   /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.651); */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; */
 }
 
 .caixa{
-    /* width: 400px;
+    width: 700px;
     margin-bottom: 10px;
-    background-color: rgb(192, 221, 240);
-    border: 1px solid rgb(173, 173, 173); */
-    /* display: block;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(173, 173, 173);
+    display: block;
     margin-left: auto;
-    margin-right: auto; */
-    text-align: center;
+    margin-right: auto;
+    text-align: justify;
     padding: 2px 16px;
-    /* padding: 15px; */
-    /* border-radius: 15px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.651); */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.651);
+    font-size: 25px;
 }
 
 .button-enviar{
     padding-top: 10px;
-    background-color: #55f8e8;
-    padding: 5px 5px;
+    background-color: #ffffff;
+    padding: 10px 10px;
     margin: 8px 0;
     border: 1px inherit #000000;
     cursor: pointer;
     width: 20%;
-    border-radius: 30px;
-    font-weight: normal;
+    border-radius: 10px;
+    font-weight: 100;
+    margin-left: 500px;
+    font-size: 24px;
+  }
+
+  #nomes, #datas, #estados, #cidades, #descricoes{
+    border: 2px solid rgb(141, 141, 141);
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: white;
   }
     
   .button-enviar:hover {
-    background-color: #ffffff;
+    background-color: #fff2e7;
     font-weight: bolder;
   }
