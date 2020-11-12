@@ -20,16 +20,16 @@
     </div>
 
     <div class="right_area">
-        <a href="index.php" class="logout_btn">Sair</a>
+        <a href="index.php" class="logout_btn">Voltar</a>
     </div>
 
 </header>
 
     <div class="content">
       <div class="card">
-        <p>""O  sistema de Busca de Profissionais Autônomos ou “BPA” teve uma estratégia inicial com diversas funcionalidades, a primeira versão foi visado mobile, depois desenvolvido em desktop e por fim um site. É um sistema que está na primeira versão em site e que disponibiliza aos clientes a busca de principais áreas de serviços. De acordo com a busca do Cliente, será retornado para o profissional da determinada busca todas as solicitações de clientes. O profissional terá a opção de aceitar e recusar, caso aceite será disponibilizado para o cliente uma lista de todos os profissionais que aceitaram seu pedido. Então, o cliente terá o telefone do profissional para entrar em contato com qual ele desejar para aceitar as questões do serviço. 
+        <p>"  O  sistema de Busca de Profissionais Autônomos ou “BPA” teve uma estratégia inicial com diversas funcionalidades, a primeira versão foi visado mobile, depois desenvolvido em desktop e por fim um site. É um sistema que está na primeira versão em site e que disponibiliza aos clientes a busca de principais áreas de serviços. De acordo com a busca do Cliente, será retornado para o profissional da determinada busca todas as solicitações de clientes. O profissional terá a opção de aceitar e recusar, caso aceite será disponibilizado para o cliente uma lista de todos os profissionais que aceitaram seu pedido. Então, o cliente terá o telefone do profissional para entrar em contato com qual ele desejar para aceitar as questões do serviço. 
 É um site que se resume inicialmente em um intermediário, busca apenas fazer a ligação entre cliente e profissional para que, os mesmo se acertem entre si.
-""
+"
       </div>
     </div>
 
