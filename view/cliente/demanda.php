@@ -61,8 +61,8 @@
                     <div class="card-center">
 
                         <form action="../../controller/cadastroDemandaQuery.php" id="form1" method="post">
-                            <div class="titulo">
-                                <h2>Preencha os Campos com os dados necessários para Concluir sua Demanda!</h2>
+                             <div class="titulo">
+                                <h2>Preencha os Campos com os dados necessários para Buscar Profissional!</h2>
                             </div>
 
                             <div class="Demanda">
