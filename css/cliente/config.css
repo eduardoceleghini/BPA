@@ -20,12 +20,12 @@ header{
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 1000;
-  padding-left: 45px;
+  margin-top: -4px;
 }
 
 .left_area span{
   color: #19B3D3;
-  padding-left: 55px;
+  padding-left: 23px;
 }
 
 .logout_btn{
@@ -44,7 +44,7 @@ header{
 }
 
 .logout_btn:hover{
-  background: red;
+  background: white;
 }
 
 .sidebar{
@@ -115,7 +115,7 @@ label #sidebar_btn{
 }
 
 label #sidebar_btn:hover{
-  color: red;
+  color:  white;
 }
 
 #check:checked ~ .sidebar{
@@ -133,14 +133,14 @@ label #sidebar_btn:hover{
 }
 
 .content{
-  width: (100% - 250px);
-  margin-top: 60px;
+  width: (100% - 200px);
+  margin-top: 0px;
   padding: 20px;
-  margin-left: 350px;
+  margin-left: 300px;
   background: url(background.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
   transition: 0.5s;
 }
 
@@ -168,24 +168,6 @@ label #sidebar_btn:hover{
   opacity: 0.8;
 }
 
-
-
-
-
-
-.imgBx {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-}
-
-.imgBx img {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-}
-
 .container {
   width: 90%;
   height: 50vh;
@@ -205,7 +187,7 @@ label #sidebar_btn:hover{
   background: #fff;
   border-bottom: 1px solid gray;
   display: flex;
-  padding: 10px;
+  padding: 5px;
   justify-content: space-between;
 }
 
@@ -216,12 +198,13 @@ label #sidebar_btn:hover{
 
 .card-conf .text {
   flex: 1;
-  padding: 15px 28px;
+  padding: 15px 30px;
   font-size: 15px;
+  width: 900px;
 }
 
 .text-clear{
-    flex: 1;
+  flex: 1;
   padding: 15px 30px;
   font-size: 15px;
 }
@@ -241,7 +224,6 @@ label #sidebar_btn:hover{
   color: black;
 }
 
-/* switche*/
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);

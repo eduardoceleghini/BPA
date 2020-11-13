@@ -18,7 +18,7 @@
     </label>
 
     <div class="left_area">
-        <h3><span>"Perfil"</span></h3>
+        <h3><span>"PERFIL"</span></h3>
     </div>
 
     <div class="right_area">
@@ -73,7 +73,7 @@
               $categoria = mysqli_real_escape_string($conn, $retornoDoSelect['categoria']);
               $servico = mysqli_real_escape_string($conn, $retornoDoSelect['servico']);
 
-              echo "<h1>Alterar Informações Pessoais<br>".$nome."!</h1>" ;
+              echo "<h2>Alterar Informações Pessoais<br>".$nome."!</h2>" ;
               echo "<div id='dados'>";
                 echo "<form action='../../controller/atualizaPerfilProfissional.php' method='POST'>";
                   echo "<span style='font-weight:bold'>Nome: </span><br>

@@ -45,8 +45,8 @@ transition-property: background;
 }
 
 .logout_btn:hover{
-background: red;
-}
+  background: white;
+  }
 
 .sidebar{
 z-index: 1;
@@ -116,7 +116,7 @@ transition-property: color;
 }
 
 label #sidebar_btn:hover{
-color: red;
+color: white;
 }
 
 #check:checked ~ .sidebar{

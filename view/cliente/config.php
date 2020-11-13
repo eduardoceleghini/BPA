@@ -53,23 +53,12 @@
     <a href="../../view/cliente/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
     <a href="../../view/cliente/demanda.php"><i class="fas fa-table"></i><span>Demanda</span></a>
     <a href="../../view/cliente/candidato.php"><i class="fas fa-table"></i><span>Lista de Candidatos</span></a>
-</div>    
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $('.nav_btn').click(function(){
-        $('.mobile_nav_items').toggleClass('active');
-      });
-    });
-    </script>      
+</div>        
 
-    <?php
-    require_once("../header/header.php");
-    ?>
 
-    <div class="imgBx">
-        <img src="../bg1.jpg" alt="" />
-    </div>
+<div class="content">
 
+<div class="card">
 
     <div class="container">
         <div class="boxCenter">
@@ -108,44 +97,33 @@
                 </div>
             </div>
 
-            <div class="card-conf">
-
+              <div class="card-conf">
                 <div class="info-term">
-                    <span class="material-icons icon">toc</span>
+                  <span class="material-icons icon">toc</span>
                 </div>
+
                 <div class="text-term">
-                    Termos e Condições
+                  Termos e Condições
                 </div>
+
                 <div class="icon-action">
-                    <a href="#">
-
-                        <span class="material-icons"> navigate_next </span>
-
-                    </a>
+                  <a href="#">
+                  <span class="material-icons"> navigate_next </span>
+                  </a>
                 </div>
+              </div>
+        
             </div>
-
-        </div>
     </div>
+</div>
+</div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>  
 </body>
 
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
 </html>

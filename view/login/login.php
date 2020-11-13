@@ -58,7 +58,7 @@ session_start();
                 </label>
 
                 <div class="redf">
-                    <a href="#">Redefinir Senha</a>
+                    <a href="redefinicao.php">Redefinir Senha</a>
                 </div>
 
                 <div class="button">
