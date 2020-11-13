@@ -10,7 +10,7 @@ session_start()
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Busca de Profissional Autônomos</title>
-  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../../css/user/redirecionarUser.css" rel="stylesheet">
 
 </head>
