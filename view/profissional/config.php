@@ -59,12 +59,12 @@
     <a href="../../view/profissional/perfil.php"><i class="fas fa-cogs"></i><span>Perfil</span></a>
     <a href="../../view/profissional/pedido.php"><i class="fas fa-table"></i><span>Pedido</span></a>
 </div>
+<div class="content">
 
+<div class="card">
 
-        <div class="content">
-
-          <div class="card">
-            <div class="boxCenter">
+    <div class="container">
+        <div class="boxCenter">
             <div class="card-conf">
 
                 <div class="info-conf">
@@ -88,7 +88,6 @@
                 <div class="info-limp">
                     <span class="material-icons icon">share</span>
                 </div>
-                
                 <div class="text-clear">
                     Compartilhar
                 </div>
@@ -101,33 +100,33 @@
                 </div>
             </div>
 
-            <div class="card-conf">
-
+              <div class="card-conf">
                 <div class="info-term">
-                    <span class="material-icons icon">toc</span>
+                  <span class="material-icons icon">toc</span>
                 </div>
+
                 <div class="text-term">
-                    Termos e Condições
+                  Termos e Condições
                 </div>
+
                 <div class="icon-action">
-                    <a href="#">
-
-                        <span class="material-icons"> navigate_next </span>
-
-                    </a>
+                  <a href="#">
+                  <span class="material-icons"> navigate_next </span>
+                  </a>
                 </div>
+              </div>
+        
             </div>
-          </div>
-          </div>
-        </div>
     </div>
-</body>
-</html>
+</div>
+</div>
     <script type="text/javascript">
     $(document).ready(function(){
       $('.nav_btn').click(function(){
         $('.mobile_nav_items').toggleClass('active');
       });
     });
-    </script>        
+    </script>  
+</body>
 
+</html>
