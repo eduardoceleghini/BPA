@@ -302,7 +302,6 @@ body {
     color: rgb(255, 255, 255);
     background: #000000;
     margin-left: 10%;
-    box-shadow: 0 8px 28px rgba(22, 223, 126, 0.45);
   }
   
   #hero .btn-get-started:hover{

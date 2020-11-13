@@ -29,7 +29,7 @@ header{
   }
   
   .logout_btn{
-    padding: 10px;
+    padding: 5px;
     background: #40e0d0;
     text-decoration: none;
     float: right;
@@ -44,7 +44,7 @@ header{
   }
   
   .logout_btn:hover{
-    background: red;
+    background:white;
   }
   
   .sidebar{
@@ -115,7 +115,7 @@ header{
   }
   
   label #sidebar_btn:hover{
-    color: red;
+    color: white;
   }
   
   #check:checked ~ .sidebar{

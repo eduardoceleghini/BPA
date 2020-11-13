@@ -61,7 +61,7 @@ header{
 }
 
 .textareadiv {
-  margin-left: 291px;
+  margin-left: 299px;
 }
   
 .input[type=text]:focus, .textarea:focus{
@@ -147,7 +147,7 @@ header{
 }
 
 .logout_btn:hover{
-  background: red;
+  background:  white;;
 }
 
 .sidebar{
@@ -218,7 +218,7 @@ label #sidebar_btn{
 }
 
 label #sidebar_btn:hover{
-  color: red;
+  color: white;
 }
 
 #check:checked ~ .sidebar{
