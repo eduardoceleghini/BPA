@@ -63,7 +63,10 @@ header{
 .textareadiv {
   margin-left: 299px;
 }
-  
+#check:checked ~ .content .textareadiv{
+  margin-left: 370px;
+}
+
 .input[type=text]:focus, .textarea:focus{
   background-color: rgb(212, 244, 245);
   }
@@ -248,7 +251,8 @@ label #sidebar_btn:hover{
 }
 
 #check:checked ~ .content{
-  margin-left: 60px;
+  margin-left: -20%;
+  margin-top: -35px;
 }
 
 #check:checked ~ .sidebar .profile_info{
