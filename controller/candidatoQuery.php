@@ -2,7 +2,9 @@
     $iddemanda = $_GET["iddemanda"];
 
     include_once('../db/connection.php');
-    $query = "DELETE FROM demanda 
+    $idusuario = mysqli_real_escape_string($conn, $_SESSION['idusuario']);
+
+    $query = "UPDATE demanda SET status='concluido'  
             WHERE iddemanda = $iddemanda";
 
     $resposta = mysqli_query($conn,$query);

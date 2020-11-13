@@ -1,12 +1,16 @@
 <?php
 
+session_start();
+
 include("../../db/connection.php");
-    $query = "SELECT *
-    FROM profissional
-    LEFT JOIN usuario ON profissional.idusuario = usuario.idusuario
-    INNER JOIN demanda ON profissional.iddemanda = demanda.iddemanda
-    WHERE tipo = 1";
+    $idusuario = mysqli_real_escape_string($conn, $_SESSION['idusuario']);
+
+    $query = "SELECT * FROM profissional p
+    LEFT JOIN usuario u ON p.idusuario = u.idusuario
+    INNER JOIN demanda d ON p.iddemanda = d.iddemanda
+    WHERE u.tipo = 1 and d.status!='concluido' and d.idusuario = $idusuario " ;
 ?>
+<!-- .$_SESSION["idusuario"] -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -145,6 +149,8 @@ include("../../db/connection.php");
             </div>
         </div>
     </div>
+
+ 
         <script type="text/javascript">
             $(document).ready(function(){
             $('.nav_btn').click(function(){
