@@ -187,13 +187,13 @@ label #sidebar_btn:hover{
   background: #fff;
   border-bottom: 1px solid gray;
   display: flex;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-between;
 }
 
 .card-conf .icon {
-  font-size: 25px;
-  padding: 15px 10px;
+  font-size: 55px;
+  padding: 7px 150px;
 }
 
 .card-conf .text {

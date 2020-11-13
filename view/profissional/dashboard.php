@@ -71,8 +71,8 @@
     </div>
 
     <div class="content">
-      <div class="card">
-        <p> BEM VINDO </p><br><br>
+      <div class="card"><br><br><br><br>
+        <p> BEM VINDO </p>
         <p>“Obrigado por trazer sua disposição e sua alegria para o trabalho todos os dias.
         Sua postura permite que os<br>projetos se tornem mais fáceis de serem executados,
         que as mudanças sejam implementadas com sucesso<br>e que os problemas se transformem em grandes oportunidades para o futuro.”<br><br>
