@@ -171,7 +171,7 @@ header{
 #dados{
   margin-left: 30%;
   text-align: justify;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 0px;
 }
   
@@ -180,6 +180,7 @@ header{
     box-sizing:border-box;
     font-size: 15px;
     padding: 7px;
+    border: 1px solid gray;
   }
   
   #dados input[type=button], input[type=submit]{
