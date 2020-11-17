@@ -180,11 +180,12 @@ header{
   margin-top: 20px;
 }
   
-  #dados input[type=text], input[type=email], input[type=tel]{
+  #dados input[type=text], input[type=email], input[type=tel], #categoria, #servicos{
     width:60%;
     box-sizing:border-box;
     font-size: 15px;
     padding: 7px;
+    border: 1px solid gray;
   }
   
   #dados input[type=button], input[type=submit]{
@@ -207,11 +208,11 @@ header{
     color: white;
   }
   
-  #dados input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus{
+  #dados input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, #categoria:focus, #servicos:focus{
     background-color: rgb(212, 244, 245);
     }
   
-  #dados input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover{
+  #dados input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, #categoria:hover, #servicos:hover{
       background-color: rgb(212, 244, 245);
   }
     

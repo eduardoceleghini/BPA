@@ -74,22 +74,25 @@
               $categoria = mysqli_real_escape_string($conn, $retornoDoSelect['categoria']);
               $servico = mysqli_real_escape_string($conn, $retornoDoSelect['servico']);
 
-              echo "<h1>Alterar Informações Pessoais<br>".$nome."!</h1>" ;
-              echo "<div id='dados'>";
-                echo "<form action='../../controller/atualizaPerfilProfissional.php' method='POST'>";
-                  echo "<span style='font-weight:bold'>Nome: </span><br>
-                  <input type='text' id='nome' name='nome' value='".$nome . "' disabled required><br>";
-                  echo "<span style='font-weight:bold'>E-mail: </span><br>
-                  <input type='email' id='email' name='email' value='".$email."' disabled required><br>";
-                  echo "<input type='button' id='edit' onclick='editarPerfil()' value='Editar Perfil'>";
-                  echo "<input type='submit' id='button1' value='Terminar Edição' disabled>";
-                  echo "</div>";
-              echo "</form>";
-            ?>
+              ?>
+
+              <h1>Alterar Informações Pessoais<br><?php echo"$nome"; ?></h1>
+              <div id='dados'>
+                <form action='../../controller/atualizaPerfilProfissional.php' method='POST'>
+                  <span style='font-weight:bold'>Nome: </span><br>
+                  <input type='text' id='nome' name='nome' value='<?php echo"$nome"; ?>' disabled required><br>
+                  <span style='font-weight:bold'>E-mail: </span><br>
+                  <input type='email' id='email' name='email' value='<?php echo"$email"; ?>' disabled required><br>
+                  <input type='button' id='edit' onclick='editarPerfil()' value='Editar Perfil'>
+                  <input type='submit' id='button1' value='Terminar Edição' disabled>
+                  </div>
+              </form>
+            
         </div>
     </div>
       
   </div>
+  <script type="text/javascript" src="../../js/servicos.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function(){
