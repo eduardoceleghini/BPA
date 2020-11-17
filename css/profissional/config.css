@@ -184,7 +184,7 @@ header{
   border-radius: 10px;
   padding: 30px;
   display: flex;
-  margin-top: 200px;
+  margin-top: 20px;
   justify-content: center;
 }
 
@@ -197,20 +197,21 @@ header{
   background: #fff;
   border-bottom: 1px solid gray;
   display: flex;
-  padding: 10px;
+  padding: 1px;
+  margin-top: 60px;
   justify-content: space-between;
 }
 
 .card-conf .icon {
-  font-size: 55px;
-  padding: 7px 150px;
+  font-size: 20px;
+  padding: 5px 10px;
 }
 
 .card-conf .text {
   flex: 1;
-  padding: 15px 30px;
+  padding: 5px 15px;
   font-size: 15px;
-  width: 900px;
+  width: 300px;
 }
 
 .text-clear{
